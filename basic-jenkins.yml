@@ -2,5 +2,8 @@
 - name: Jenkins
   hosts: jenkinsservers
   sudo: yes
+  tasks:
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
   roles:
     - ansible-jenkins
